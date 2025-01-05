@@ -1,0 +1,363 @@
+<html>
+    <head>
+        <title>Portfolio</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Concert+One&family=Lobster&display=swap" rel="stylesheet">
+        <style>
+            body {
+                font-family: 'Afacad Flux';
+                color: white;
+                font-size: 1.5rem;
+            }
+
+            .main {
+                width: 100%;
+                aspect-ratio: 2/1;
+                background-image: url(./Assets/Minimal-Beach.jpg);
+                background-size: contain;
+                position: relative;
+                border-radius: 1.3rem;
+            }
+
+            .dp {
+                height: 20%;
+                aspect-ratio: 1/1;
+                border-radius: 50%;
+                background-image: url(./Assets/DP.jpg);
+                background-size: contain;
+                position: absolute;
+                left: 5%;
+                top: 35%;
+            }
+
+            .greetings{
+                position: absolute;
+                top: 55%;
+                left: 5%;
+            }
+
+            .introduction {
+                width: 100%;
+                height: 70%;
+                padding: 1.5rem 0;
+                margin: 10rem 0;
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                text-align: justify;
+            }
+
+            .dev-image {
+                width: 42%;
+                aspect-ratio: 16/9;
+                background-image: url(./Assets/Developer.jpg);
+                background-size: cover;
+                border-radius: 1rem;
+                
+            }
+
+            .myself {
+                width: 40%;
+                color: black;
+            }
+
+            .other-things {
+                display: flex;
+                justify-content: center;
+                text-align: center;
+                color: #78c7c7;
+                margin-bottom: 4rem;
+            }
+
+            .about {
+                display: flex;
+                justify-content: space-between;
+                height: 65%;
+                position: relative;
+                border-radius: 1.2rem;
+            }
+
+            img {
+                width: 100%;
+                border-radius: 1rem 1rem 0 0;
+            }
+
+            .card {
+                width: 22%;
+                aspect-ratio: 2/3;
+                border-radius: 1rem;
+                font-size: 1.2rem;
+                color: white;
+                display: flex;
+                flex-direction: column;
+                background-color: #78c7c7;
+            }
+
+            .image {
+                width: 100%;
+                aspect-ratio: 3/2;
+            }
+
+            .text {
+                padding: 0.5rem;
+                text-align: justify;
+            }
+
+            .action-area {
+                width: 100%;
+                height: 30%;
+                font-size: 1.5rem;
+                margin-top: 14rem;
+                margin-bottom: 14rem;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                color: black;
+            }
+
+            .join {
+                width: 60%;
+            }
+
+            input {
+                width: 16%;
+                aspect-ratio: 3/1;
+                border-radius: 1rem;
+                color: white;
+                font-family: 'Afacad Flux';
+                background-color: #78c7c7;
+                border: 0;
+                font-size: 2.5vw;
+            }
+
+            input:hover {
+                width: 17%;
+                aspect-ratio: 3/1;
+            }
+
+            footer {
+                height: 8%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            footer li {
+                width: 2.5rem;
+            }
+
+            footer img {
+                width: 90%;
+            }
+
+            .insta:hover {
+                width: 100%;
+            }
+
+            .fb:hover {
+                width: 100%;
+            }
+
+            .x:hover {
+                width: 100%;
+            }
+
+            .icons {
+                display: flex;
+                align-items: center;
+            }
+
+            ul {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                gap: 1.5rem;
+            }
+
+            li {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .copy {
+                display: flex;
+                align-items: center;
+            }
+
+            footer > p {
+                color: black;
+                text-align: center;
+            }
+
+            @media (max-width: 1200px) {
+                .dp {
+                    left: 2%;
+                    top: 15%;
+                }
+
+                .greetings {
+                    left: 2%;
+                    top: 40%;
+                    font-size: 1rem;
+                    line-height: 1rem;
+                }
+
+                .introduction {
+                    flex-direction: column;
+                    /background-color: green;
+                    height: 50%
+                }
+
+                .dev-image {
+                    width: 70%;
+                }
+
+                .myself {
+                    width: 70%;
+                    font-size: 1.2rem;
+                }
+
+                .about {
+                    flex-direction: column;
+                    align-items: center;
+                    height: 250%;
+                }
+
+                .card {
+                    width: 90%;
+                    aspect-ratio: 2/2;
+                }
+
+                .action-area {
+                    font-size: 1.5rem;
+                    margin-top: 10rem;
+                    margin-bottom: 10rem;
+                    height: 15%;
+                    /background-color: red;
+                }
+
+                .join {
+                    width: 90%;
+                }
+
+                .button {
+                    width: 40%;
+                    aspect-ratio: 3/1;
+                    font-size: 3rem;
+                }
+
+                .button:hover {
+                    width: 45%;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="main">
+            <div class="dp"></div>
+            <div class="greetings">
+                <h4>Hello!</h4>
+                <h1>I'm Samar</h1>
+                <h4>A Web Designer & Developer</h4>
+            </div>
+        </div>
+
+
+        <div class="introduction">
+            <div class="dev-image"></div>
+            <div class="myself">
+                <h2>My Coding Journey</h2>
+                <p>
+                    I'm a passionate web development enthusiast.
+                    Just six months ago, I thought coding was dull and uninspiring. But once I gave
+                    it a shot, I discovered a whole new world of creativity and problem-solving.
+                    What started as a hesitant step into coding quickly transformed into a love for
+                    development, and now, I find joy in crafting solutions, building websites, and
+                    turning ideas into functional realities. The journey has been exciting, and every
+                    line of code I write feels like a step toward mastering a skill I've truly grown to love.
+                </p>
+            </div>
+        </div>
+
+        <div class="other-things">
+            <h2 id="hobbies">Some Other Things That I Love</h2>
+        </div>
+
+
+        <div class="about">
+            <div class="card">
+                <div class="image"><img src="./Assets/gym.jpg"></div>
+                <div class="text">
+                    <h2>Fitness</h2>
+                    <p>
+                        fitness is an integral part of my life. Regular workouts not only keep me physically strong
+                        but also fuel my mind with discipline and positivity.
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="image"><img src="./Assets/Chicken-Biryani-3.jpg"></div>
+                <div class="text">
+                    <h2>Biryani</h2>
+                    <p>
+                        I'm a die-hard biryani lover. Whether it's the aromatic spices or the perfectly cooked
+                        layers of rice and meat, biryani is my ultimate comfort food and a celebration on every plate!
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="image"><img src="./Assets/Cricket.jpg"></div>
+                <div class="text">
+                    <h2>Cricket</h2>
+                    <p>
+                        Cricket is more than just a sport to me—it's a passion. Whether I'm watching a nail-biting
+                        match or playing on the field, cricket brings out the spirit of teamwork and the thrill of competition in me.
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="image"><img src="./Assets/Books-2.jpg"></div>
+                <div class="text">
+                    <h2>Reading</h2>
+                    <p>
+                        I'm an avid book lover. For me, every book is a gateway to new ideas, stories, and perspectives,
+                        making reading my favorite escape and source of inspiration.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="action-area">
+            <div class="join">
+                <p>
+                    If you share my love for coding, fitness, cricket, books, or even a great plate of biryani,
+                    let's connect! I'd love to collaborate, share ideas, or simply have a chat.
+                </p>
+            </div>
+            <br>
+            <input class="button" type="button" value="Contact Me">
+        </div>
+
+
+        <hr>
+
+
+        <footer>
+            <p>© Samar Alam Khan</p>
+            <div class="icons">
+                <ul>
+                    <li><a><img class="insta" src="./Assets/Facebook-B.png"></a></li>
+                    <li><a href="https://www.instagram.com/khan_samar_alam/"><img class="fb" src="./Assets/Instagram-B.png"></a></li>
+                    <li><a><img class="x" src="./Assets/X-B.png"></a></li>
+                </ul>
+            </div>
+        </footer>
+    </body>
+</html>
