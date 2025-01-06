@@ -65,7 +65,7 @@
             .other-things {
                 display: flex;
                 justify-content: center;
-                text-align: center;
+                text-align: left;
                 color: #78c7c7;
                 margin-bottom: 4rem;
             }
@@ -196,61 +196,66 @@
             }
 
             @media (max-width: 1200px) {
+
                 .main {
                     background-image: url(./Aesthetic-Mountains.jpg);
                     background-size: cover;
-                    width: 100%;
-                    aspect-ratio: 9/16;
+                    height: 100%;
                     display: flex;
                     flex-direction: column;
-                    justify-content: center;
-                    align-items: flex-start;
-                
+                    justify-content: space-evenly;
+                    align-items: center;
+                }
+
                 .dp {
-                    width: 3rem;
-                    height: 3rem;
-                    left: 2%;
-                    top: 15%;
+                    position: static;
                 }
 
                 .greetings {
-                    left: 2%;
-                    top: 40%;
-                    font-size: 2rem;
-                    line-height: 1rem;
+                    position: static;
+                    text-align: center;
+                    font-size: 5rem;
+                    line-height: 3rem;
                 }
 
                 .introduction {
+                    background-color: pink;
                     flex-direction: column;
-                    height: 50%
+                    height: 90%
                 }
 
                 .dev-image {
-                    width: 70%;
+                    width: 75%;
+                    margin-bottom: 4rem
                 }
 
                 .myself {
-                    width: 70%;
-                    font-size: 2rem;
+                    width: 75%;
+                    font-size: 3rem;
                 }
-
-                .other-things {
-                    font-size: 2rem
 
                 .about {
                     flex-direction: column;
                     align-items: center;
-                    height: 250%;
+                    height: 230%;
+                }
+
+                .other-things {
+                    font-size: 2.7rem;
+                    /background-color: orange;
+                    text-align: left;
+                    width: 90%;
+                    /margin-left: 5%;
                 }
 
                 .card {
                     width: 90%;
-                    aspect-ratio: 2/2;
-                    font-size: 2rem;
+                    aspect-ratio: 1/1;
+                    font-size: 2.3rem;
                 }
 
                 .action-area {
-                    font-size: 2.5rem;
+                    font-size: 1.5rem;
                     margin-top: 10rem;
                     margin-bottom: 10rem;
                     height: 15%;
@@ -270,8 +275,22 @@
                     width: 45%;
                 }
 
+                .ftc {
+                    display: flex;
+                    justify-content: center;
+                }
+
                 footer {
-                    font-size: 2rem;
+                    width: 98%;
+                }
+
+                footer {
+                    font-size: 2.3rem;
+                }
+
+                footer li {
+                    width: 4rem;
+                }
             }
         </style>
     </head>
@@ -341,7 +360,7 @@
             <div class="card">
                 <div class="image"><img src="./Assets/Books-2.jpg"></div>
                 <div class="text">
-                    <h2>Reading</h2>
+                    <h2>Books</h2>
                     <p>
                         I'm an avid book lover. For me, every book is a gateway to new ideas, stories, and perspectives,
                         making reading my favorite escape and source of inspiration.
@@ -366,15 +385,17 @@
         <hr>
 
 
-        <footer>
-            <p>© Samar Alam Khan</p>
-            <div class="icons">
-                <ul>
-                    <li><a><img class="insta" src="./Assets/Facebook-B.png"></a></li>
-                    <li><a href="https://www.instagram.com/khan_samar_alam/"><img class="fb" src="./Assets/Instagram-B.png"></a></li>
-                    <li><a><img class="x" src="./Assets/X-B.png"></a></li>
-                </ul>
-            </div>
-        </footer>
+        <div class="ftc">
+            <footer>
+                <p>© Samar Alam Khan</p>
+                <div class="icons">
+                    <ul>
+                        <li><a><img class="insta" src="./Assets/Facebook-B.png"></a></li>
+                        <li><a href="https://www.instagram.com/khan_samar_alam/"><img class="fb" src="./Assets/Instagram-B.png"></a></li>
+                        <li><a><img class="x" src="./Assets/X-B.png"></a></li>
+                    </ul>
+                </div>
+            </footer>
+        </div>
     </body>
 </html>
